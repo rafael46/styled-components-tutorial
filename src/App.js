@@ -36,7 +36,7 @@ const Thumbnail = styled.img`
   margin: 15px;
   ${border}
 `;
-
+// const showBorder = index % 2 === 0;
 class App extends Component {
   render() {
     const thumbnails = Array.from({ length: 5 }, (_, index) => {
@@ -46,7 +46,7 @@ class App extends Component {
 
     return (
       <div className={this.props.className}>
-        <Title color={mainColor}>Mystagram</Title>
+        <Title color1={mainColor}>Mystagram</Title>
         <Gallery>
           {thumbnails}
         </Gallery>
